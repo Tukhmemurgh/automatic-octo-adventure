@@ -1,1 +1,2049 @@
-<html><body><p>Hello World</p></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.8.1" />
+<title>MatrixModule API documentation</title>
+<meta name="description" content="" />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>MatrixModule</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python"># Projekt Atabak Jalali 9912080158 grudat 20
+class SizeError(Exception):
+    &#34;&#34;&#34;Extends the built-in Exception class and creates a new error called SizeError.&#34;&#34;&#34;
+    pass
+
+class Matrix():
+    &#34;&#34;&#34;A class for creating NxM matrices.&#34;&#34;&#34;
+
+    def __init__(self, m):
+        &#34;&#34;&#34;
+        Creates a new Matrix instance. &#34;m&#34; is either a Matrix instance, a list of matrix instances (vectors), or a list of either floats, ints. m can also be a scalar to create a 1x1 matrix.
+        &#34;&#34;&#34;
+        self._T = False
+        self._matrix = []
+        self._tmatrix = []
+        self._is_vec = True
+        self._det = None
+        self._trc = None
+        self._N = 0
+        self._M = 0
+        if isinstance(m, Matrix):
+            self._mIsMatrix(m)
+        elif isinstance(m, list):
+            self._mIsList(m)
+        elif isinstance(m, (float, int)):
+            self._mIsNumber(m)
+        else:
+            raise TypeError(&#34;Input has to be a list, Matrix, float, int.&#34;)
+        self._dim = (self._N, self._M)
+        if self._tmatrix == []:
+            self._tmatrix = self._transposer()
+        self._Healthy()
+
+    def _mIsMatrix(self, m):
+        &#34;&#34;&#34;
+        Assistive function for __init__(). Takes in a Matrix instance &#34;m&#34; and makes self a copy of &#34;m&#34;.
+        Time complexity is O(N*M), where N is the number of rows in &#34;m&#34; and M is the number of columns in &#34;m&#34;.
+        &#34;&#34;&#34;
+        temp = m.copy()
+        self._matrix = temp._matrix
+        self._N = temp._N
+        self._M = temp._M
+        self._is_vec = temp._is_vec
+        self._T = temp._T
+        self._tmatrix = temp._tmatrix
+
+    def _mIsList(self, m):
+        &#34;&#34;&#34;
+        Assistive function for __init__(). Takes in a list &#34;m&#34; and sets attributes of self depending on the contents of &#34;m&#34;.
+        Time complexity depends on contents of m (see TimeComplexities).
+        &#34;&#34;&#34;
+        length = len(m)
+        if length == 0:
+            raise SizeError(&#34;Cannot initiate an empty matrix&#34;)
+        else:
+            temp_length = 0
+            content_type = None
+            for i in range(length):
+                if content_type == None:
+                    if isinstance(m[i], (float, int)):
+                        content_type = (float, int)
+                    elif isinstance(m[i], list):
+                        content_type = list
+                    elif isinstance(m[i], Matrix):
+                        content_type = Matrix
+                elif not isinstance(m[i], content_type):
+                    raise TypeError(&#34;Element types in provided list are not consistent&#34;)
+                if isinstance(m[i], Matrix):
+                    if not m[i]._is_vec:
+                        raise SizeError(&#34;Elements in provided list must be vectors or 1D lists&#34;)
+                    vec = m[i].copy()
+                    if vec._T:
+                        vec.transpose()
+                    if temp_length == 0:
+                        temp_length = vec._M*vec._N
+                    elif temp_length != vec._M*vec._N:
+                        raise SizeError(&#34;Sizes of vectors in provided list are not consistent&#34;)
+                    self._matrix.append(vec)
+                    if self._is_vec and temp_length &gt; 1:
+                        self._is_vec = False
+                    continue
+                elif isinstance(m[i], (float, int)):
+                    continue
+                elif isinstance(m[i], list):
+                    for k in range(len(m[i])):
+                        if not isinstance(m[i][k], (float, int)):
+                            raise TypeError(&#34;Matrix row vectors must consist of numbers (float, int)&#34;)
+                    if temp_length == 0:
+                        temp_length = len(m[i])
+                    elif temp_length != len(m[i]):
+                        raise SizeError(&#34;Dimensions of rows in inputted list are not consistent&#34;)
+                    if temp_length &gt; 1:
+                        self._is_vec = False
+                else:
+                    raise TypeError(&#34;Provided list must contain either floats, ints or lists.&#34;)
+        if self._is_vec:
+            self._T = True
+            for i in range(length):
+                if isinstance(m[i], (float, int)):
+                    self._T = False
+                elif (not self._T and isinstance(m[i], (list, Matrix))) or (i &gt; 0 and self._T and isinstance(m[i], (float, int))):
+                    raise TypeError(&#34;Element types in provided array are not consistent.&#34;)
+                elif not isinstance(m[i][0], (float, int)):
+                    raise TypeError(&#34;Column vectors cannot contain arrays of dimension greater than 1&#34;)
+            if self._T:
+                if content_type == Matrix:
+                    self._matrix = [m[i]._matrix[0] for i in range(length)]
+                    self._N = length
+                    self._M = 1
+                elif content_type == list:
+                    self._matrix = [m[i][0] for i in range(length)]
+                    self._N = length
+                    self._M = 1
+            elif not self._T:
+                self._matrix = [m[i] for i in range(length)]
+                self._N = 1
+                self._M = length
+        elif not self._is_vec:
+            if self._matrix == []:
+                self._matrix = [Matrix(m[i]) for i in range(length)]
+            self._N = length
+            self._M = temp_length
+
+    def _mIsNumber(self, m):
+        &#34;&#34;&#34;Assistive function for __init__(). Takes in an int or float &#34;m&#34;. Time complexity is O(1).&#34;&#34;&#34;
+        self._matrix = [m]
+        self._N = 1
+        self._M = 1
+
+    def _transposer(self):
+        &#34;&#34;&#34;
+        A private method which returns a list that contains the transposed rows of self._matrix.
+        If self is a vector (either self._M or self._N is 1), then time complexity is O(1).
+        However, if self is not a vector, then the time complexity is O(M*N), where M is the number of columns in self and N is the number of rows in self.
+        &#34;&#34;&#34;
+        if self._is_vec:
+            return self._matrix
+        return [Matrix([self._matrix[k]._matrix[i] for k in range(self._N)]) for i in range(self._M)]
+
+    def add(self, other):
+        &#34;&#34;&#34;
+        Allows matrix addition (including vectors). When adding Matrix instances, one can also use the &#34;+&#34;-operator. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        return self.__add__(other)
+
+    def __add__(self, other):
+        &#34;&#34;&#34;
+        Overrides the &#39;+&#39;-operator and implements matrix addition in its place. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if not isinstance(other, Matrix):
+            raise TypeError(&#34;Can only add matrices to matrices&#34;)
+        if other._dim != self._dim:
+            raise SizeError(&#34;Matrix addition only works for matrices of equal dimensions.&#34;)
+        else:
+            if self._is_vec and other._is_vec:
+                if not self._T:
+                    return Matrix([self[j]+other[j] for j in range(self._M)])
+                elif self.T:
+                    return Matrix([self[j]+other[j] for j in range(self._N)])
+            elif not self._is_vec and not other._is_vec:
+                return Matrix([[self._matrix[i][j]+other._matrix[i][j] for j in range(self._M)] for i in range(self._N)])
+
+    __radd__ = __add__
+
+    def __iadd__(self, other):
+        &#34;&#34;&#34;Overrides the &#34;+=&#34; operator. Has the same time complexity as __add__().&#34;&#34;&#34;
+        return self + other
+
+    def subtract(self, other):
+        &#34;&#34;&#34;
+        Allows matrix subtraction (including vectors). When subtracting Matrix instances, one can also use the &#34;-&#34;-operator. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        return self.__sub__(other)
+
+    def __sub__(self, other):
+        &#34;&#34;&#34;
+        Overrides the &#39;-&#39;-operator and implements matrix subtraction in its place. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if not isinstance(other, Matrix):
+            raise TypeError(&#34;Can only add matrices to matrices&#34;)
+        if other._dim != self._dim:
+            raise SizeError(&#34;Matrix addition only works for matrices of equal dimensions.&#34;)
+        else:
+            if self._is_vec and other._is_vec:
+                if not self._T:
+                    return Matrix([self[j]+other[j] for j in range(self._M)])
+                elif self.T:
+                    return Matrix([self[j]+other[j] for j in range(self._N)])
+            elif not self._is_vec and not other._is_vec:
+                return Matrix([[self._matrix[i][j]+other._matrix[i][j] for j in range(self._M)] for i in range(self._N)])
+
+    def __isub__(self, other):
+        &#34;&#34;&#34;Overrides the &#34;-=&#34; operator. Has the same time complexity as __sub__().&#34;&#34;&#34;
+        return self - other
+
+    def multiply(self, other):
+        &#34;&#34;&#34;
+        Allows matrix multiplication (including vectors). When multiplying matrix instances, one can also use the &#34;*&#34;-operator. For rules, see README. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        return self.__mul__(other)
+
+    def __mul__(self, other):
+        &#34;&#34;&#34;
+        Overrides the &#39;*&#39;-operator and implements matrix multiplication in its place. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if not isinstance(other, (float, int, Matrix)):
+            raise TypeError(&#34;Can only multiply a matrix by a scalar, vector or matrix.&#34;)
+        if isinstance(other, (float, int)):
+            return self._scalarMul(other)
+        else:
+            if self._is_vec and other._is_vec:
+                return self._mulVecVec(other)
+            else:
+                return self._mulMatMat(other)
+
+    def _scalarMul(self, other):
+        &#34;&#34;&#34;
+        Helper method for __mul__. Takes in a scalar and returns a new vector. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if self._is_vec:
+            return Matrix([self._matrix[j]*other for j in range(self._M)])
+        elif not self._is_vec:
+            return Matrix([[self._matrix[i]._matrix[j]*other for j in range(self._M)] for i in range(self._N)])
+
+    def _mulVecVec(self, other):
+        &#34;&#34;&#34;
+        Helper method for __mul__. Takes in a vector and returns a number or a matrix. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if self._M*self._N != other._M*other._N:
+            raise SizeError(&#34;Vectors must be of equal length.&#34;)
+        if (self._T and other._T) or (not self._T and not other._T) or (not self._T and other._T):
+            return self._sum([self._matrix[i]*other._matrix[i] for i in range(self._N*self._M)])
+        elif self._T and not other._T:
+            temp = []
+            for i in range(self._N*self._M):
+                temp.append([self._matrix[i]*other._matrix[k] for k in range(other._N*other._M)])
+            return Matrix(temp)
+
+    def _mulMatMat(self, other):
+        &#34;&#34;&#34;
+        Helper method for __mul__. Takes in a matrix and returns a new matrix (this includes a vector as well). For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if self._M != other._N:
+            raise SizeError(&#34;row space of the left matrix is not the same dimension as the column space of the right one.&#34;)
+        temp_0 = []
+        if self._is_vec:
+            for i in range(other._M):
+                temp = []
+                for k in range(self._M):
+                    temp.append(self._matrix[k]*other._matrix[k]._matrix[i])
+                temp_0.append(self._sum(temp))
+            return Matrix(temp_0)
+        elif not self._is_vec:
+            if other._is_vec:
+                for i in range(self._N):
+                    temp_0.append([self._matrix[i]*other])
+                return Matrix(temp_0)
+            elif not other._is_vec:
+                for i in range(self._N):
+                    temp_0.append([self._matrix[i]*other._tmatrix[k] for k in range(other._M)])
+                return Matrix(temp_0)
+
+    def __rmul__(self, other):
+        &#34;&#34;&#34;
+        Defines __rmul__ for matrices so that scalar multiplication is possible. Takes in a scalar and returns a vector or matrix. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if not isinstance(other, (int, float)):
+            raise TypeError(&#34;Cannot multiply a matrix from the left by anything other than an int or a float&#34;)
+        return self*other
+
+    def power(self, x):
+        &#34;&#34;&#34;
+        Takes in an exponent and returns a new matrix.. This only works for square matrices. One can also use the &#34;**&#34;-operator to raise matrices to a power.
+        For time complexity, see TimeComplexities.&#34;&#34;&#34;
+        return self.__pow__(x)
+
+    def __pow__(self, x):
+        &#34;&#34;&#34;
+        Overrides the &#34;**&#34;-operator and implements powers of matrices instead. This only works for square matrices.
+        Takes in an exponent and returns a new matrix. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if self._N != self._M:
+            raise SizeError(&#34;Cannot take the power of a non-square matrix.&#34;)
+        temp_mat = self.copy()
+        for i in range(x-1):
+            temp_mat *= self
+        return temp_mat
+
+    def copy(self):
+        &#34;&#34;&#34;
+        Returns a copy of this matrix. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        new_copy = []
+        if self._is_vec:
+            for i in range(self._N*self._M):
+                if not self._T:
+                    new_copy.append(self._matrix[i])
+                elif self._T:
+                    new_copy.append([self._matrix[i]])
+            new_copy = Matrix(new_copy)
+        elif not self._is_vec:
+            for i in range(self._N):
+                new_copy.append([self._matrix[i][k] for k in range(self._M)])
+            new_copy = Matrix(new_copy)
+        new_copy._T = self._T
+        return new_copy
+
+    def get(self, index):
+        &#34;&#34;&#34;
+        Allows accessing elements in a Matrix instance. One can also use the &#34;[]&#34;-delimeter to access elements, just as you would with lists, though with some new rules (see README). Takes in an int or a slice and returns either a number or a matrix.
+        For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        return self.__getitem__(index)
+
+    def __getitem__(self, index):
+        &#34;&#34;&#34;
+        Overrides the &#39;[]&#39;-delimeter and implements accessing the element at index in a Matrix-instance. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if isinstance(index, str):
+            raise SizeError(&#34;jag kom igenom&#34;)
+        if isinstance(index, slice):
+            start = index.start
+            stop = index.stop
+            if start == None:
+                start = 0
+            if stop == None:
+                stop = self._N
+            if start &lt; 0:
+                start += self._N
+            if stop &lt; 0:
+                stop += self._N
+            if start &gt;= stop:
+                raise IndexError(&#34;Start index must be less than stop index&#34;)
+        return_item = self._matrix[index]
+        if isinstance(return_item, (int, float, Matrix)):
+            return return_item
+        elif isinstance(return_item, list):
+            temp_mat = Matrix(return_item)
+            if temp_mat._is_vec:
+                return temp_mat
+            elif not temp_mat._is_vec:
+                temp_bool = False
+                for i in range(temp_mat._N):
+                    if temp_mat._matrix[i]._T:
+                        temp_bool = True
+                    elif temp_bool and not temp_mat._matrix[i]._T:
+                        raise SizeError(&#34;Vectors in a matrix must all either be transposed or not transposed&#34;)
+                temp_mat._T = True
+                return temp_mat
+
+    def set(self, item, start, stop = None,):
+        &#34;&#34;&#34;
+        This method allows assignment throug indexing or slicing. One can also (is encouraged to) use the &#34;[]&#34;-delimeters, i.e. expressions of the form a[i:j] = something new or a[i] = something new.
+        Takes in an item (int, float or Matrix) and a start and stop index (default is None). Can only replace multiple columns or multiple rows in matrices, not arbitrary rectangles in the matrix.
+        For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        return self.__setitem__(slice(start, stop), item)
+
+    def __setitem__(self, index, item):
+        &#34;&#34;&#34;
+        This method allows assignment throug indexing or slicing, i.e. expressions of the form a[i:j] = some new matrix.
+        Takes in an index as an int or a slice and an item (int, float or Matrix). Can only replace multiple columns or multiple rows in matrices, not arbitrary rectangles in the matrix.
+        For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if not isinstance(item, (float, int, Matrix)):
+            raise TypeError(&#34;New item must be either int, float or another Matrix.&#34;)
+        if not isinstance(index, (int, slice)):
+            raise IndexError(&#34;index must be either int or slice.&#34;)
+        if isinstance(index, slice):
+            self._indexIsSlice(index, item)
+        elif isinstance(index, int):
+            self._indexIsInt(index, item)
+        self._tmatrix = self._transposer()
+        self._det = None
+        if self._N == self._M:
+            self._det = self.det()
+        self._Healthy()
+
+    def _indexIsSlice(self, index, item):
+        &#34;&#34;&#34;
+        Assistive method for __setitem__ and handles slicing. Takes in a slice and an item (Matrix, int, float) and makes the replacements.
+        &#34;&#34;&#34;
+        start = index.start
+        stop = index.stop
+        if isinstance(item, Matrix):
+            if index.step != None:
+                if index.step != 1:
+                    raise IndexError(&#34;Cannot replace non-adjacent rows or columns with slice&#34;)
+            if start == None:
+                start = 0
+            if item._T and stop == None:
+                stop = self._N
+            elif not item._T and stop == None:
+                stop = self._M
+            if item._T and start &lt; 0:
+                start += self._N
+            elif not item._T and start &lt; 0:
+                start += self._M
+            if item._T and stop &lt; 0:
+                stop += self._N
+            elif not item._T and stop &lt; 0:
+                stop += self._M
+            if start &lt; 0 or stop &lt; 0:
+                raise IndexError(&#34;index out of range.&#34;)
+            if start &gt;= stop:
+                raise IndexError(&#34;start index must be less than stop index&#34;)
+            if self._is_vec:
+                if not item._is_vec:
+                    raise SizeError(&#34;Cannot insert matrices into a vector.&#34;)
+                if stop - start &gt; self._M*self._N:
+                    raise IndexError(&#34;Index out of bounds&#34;)
+                elif item._N*item._M == len(self._matrix[index]):
+                    temp_mat = item.copy()
+                    self._matrix[index] = temp_mat._matrix
+                else:
+                    raise SizeError(&#34;Size of new sub-vector does not match size of slice&#34;)
+            elif not self._is_vec:
+                if not item._is_vec:
+                    if item._T:
+                        if item._N == self._N and item._M == (stop-start):
+                            temp_mat = item.copy()
+                            for i in range(item._N):
+                                for k in range(start, stop):
+                                    self._matrix[i]._matrix[k] = temp_mat._matrix[i]._matrix[k-start]
+                        else:
+                            raise SizeError(&#34;Size of provided new matrix does not match slice&#34;)
+                    elif not item._T:
+                        if item._M == self._M and item._N == (stop-start):
+                            temp_mat = item.copy()
+                            self._matrix[start:stop] = temp_mat._matrix
+                        else:
+                            raise SizeError(&#34;Dimensions of new row vectors do not match the row-space of the matrix&#34;)
+                elif item._is_vec:
+                    if item._T and item._N == self._N and (stop-start) == 1:
+                        temp_mat = item.copy()
+                        for i in range(self._N):
+                            self._matrix[i]._matrix[start] = temp_mat._matrix[i]
+                    elif not item._T and item._M == self._M and (stop-start) == 1:
+                        temp_mat = item.copy()
+                        self._matrix[start] = temp_mat
+                    else:
+                        raise SizeError(&#34;Size of slice and new vector are not the same&#34;)
+
+        elif isinstance(item, (int, float)):
+            if start == None:
+                start = 0
+            if self._T and stop == None:
+                stop = self._N
+            elif not self._T and stop == None:
+                stop = self._M
+            if self._T and start &lt; 0:
+                start += self._N
+            elif not self._T and start &lt; 0:
+                start += self._M
+            if self._T and stop &lt; 0:
+                stop += self._N
+            elif not self._T and stop &lt; 0:
+                stop += self._M
+            if start &lt; 0 or stop &lt; 0:
+                raise IndexError(&#34;index out of range.&#34;)
+            if start &gt;= stop:
+                raise IndexError(&#34;start index must be less than stop index&#34;)
+            if not self._is_vec:
+                raise SizeError(&#34;Cannot replace a vector by a number&#34;)
+            elif self._is_vec:
+                if start - stop &gt; 1:
+                    raise SizeError(&#34;Size of slice and number of replaced elements do not match&#34;)
+                self._matrix[index] = item
+
+    def _indexIsInt(self, index, item):
+        &#34;&#34;&#34;
+        Assistive method for __setitem__ and handles indexes. Takes in an int and an item (Matrix, int, float) and makes the replacement.
+        &#34;&#34;&#34;
+        if self._is_vec:
+            if isinstance(item, Matrix):
+                raise SizeError(&#34;Item must be float or int.&#34;)
+            self._matrix[index] = item
+        elif not self._is_vec: #kolla på den här senare
+            if isinstance(item, (int, float)):
+                raise TypeError(&#34;Item must be a vector.&#34;)
+            elif not item._is_vec:
+                raise SizeError(&#34;Cannot replace a row with a matrix&#34;)
+            if item._T:
+                if item._N != self._N:
+                    raise SizeError(&#34;Dimension of column vector is not the same as column space of matrix.&#34;)
+                temp_mat = item.copy()
+                for i in range(self._N):
+                    self._matrix[i]._matrix[index] = temp_mat._matrix[i]
+            elif not item._T:
+                if item._M != self._M:
+                    raise SizeError(&#34;Dimension of row vector is not the same as row space of matrix.&#34;)
+                temp_mat = item.copy()
+                self._matrix[index] = temp_mat
+
+    def isEqual(self, other):
+        &#34;&#34;&#34;
+        Allows comparing Matrix instances. One can also (and is encouraged to) use the &#34;==&#34;-operator instead. Expects input as a Matrix instance and returns True or False depending on whether this matrix and other are the same or not.
+        For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        return self.__eq__(other)
+
+    def __eq__(self, other):
+        &#34;&#34;&#34;
+        Overrides the &#34;==&#34;-operator and implements comparing Matrix instances. Expects input as a Matrix instance and returns True or False depending on whether self and input are the same or not.
+        For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if self._is_vec and other._is_vec:
+            if (self._T and not other._T) or (not self._T and other._T):
+                return False
+            elif self._T and other._T:
+                for i in range(self._N):
+                    if self._matrix[i] != other._matrix[i]:
+                        return False
+                return True
+            elif not self._T and not other._T:
+                for i in range(self._M):
+                    if self._matrix[i] != other._matrix[i]:
+                        return False
+                return True
+        elif self._N != other._N or self._M != other._M:
+            return False
+        for i in range(self._N):
+            for j in range(self._M):
+                if self._matrix[i]._matrix[j] != other._matrix[i]._matrix[j]:
+                    return False
+        return True
+
+    def isNotEqual(self, other):
+        &#34;&#34;&#34;
+        Allows comparing Matrix instances. One can also (and is encouraged to) use the &#34;!=&#34;-operator instead. Expects input as a Matrix instance and returns False or True depending on whether this matrix and other are the same or not.
+        This method simply returns the opposite of what isEqual() returns, so for time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+
+    def __neq__(self, other):
+        &#34;&#34;&#34;
+        Overrides the &#34;!=&#34;-operator and implements comparing Matrix instances. Expects input as a Matrix instance and returns True or False depending on whether self and input are the same or not.
+        This method makes full use of __eq__, and so for time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if self == other:
+            return False
+        return True
+
+    def transpose(self):
+        &#34;&#34;&#34;Transposes the matrix. Returns &#39;self&#39; after the transponation so that one can access columns with indexing. For time complexity, see TimeComplexities.&#34;&#34;&#34;
+        self._matrix, self._tmatrix = self._tmatrix, self._matrix
+        self._N, self._M = self._M, self._N
+        self._dim = (self._N, self._M)
+        if self._T:
+            self._T = False
+        elif not self._T:
+            self._T = True
+        self._Healthy()
+        return self
+
+    def _sum(self, a):
+        &#34;&#34;&#34;Return the sum of the elements in the list a. Time complexity is dependant on time complexity of _sumHelper, which is O(n).&#34;&#34;&#34;
+        return self._sumHelper(a, 0, len(a)-1)
+
+    def _sumHelper(self, a, i, j):
+        &#34;&#34;&#34;Return the sum of the elements from a[i] to a[j]. Time complexity is O(n).&#34;&#34;&#34;
+        if i &gt; j:
+                return 0
+        if i == j:
+                return a[i]
+        mid = (i+j)//2
+        return self._sumHelper(a, i, mid) + self._sumHelper(a, mid+1, j)
+
+    def det(self):
+        &#34;&#34;&#34;
+        DISCLAIMER: This algorithm is VERY inefficient. Therefore, it is not well-suited for large matrices.
+        Only works for square matrices. Calculates and returns the determinant of the matrix.
+        Once calculated, the value is cached. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if self._det is None:
+            if self._N*self._M == 1 or self._N != self._M:
+                raise SizeError(&#34;Matrix must be square and at least 2x2&#34;)
+            self._det = self._determinantHelper(self._matrix)
+            return self._det
+        elif self._det != None:
+            return self._det
+
+    def _determinantHelper(self, matrix):
+        &#34;&#34;&#34;A recursive algorithm which takes in a matrix and calculates and returns the determinant. Time complexity of the algorithm scales factorially, O(n!)&#34;&#34;&#34;
+        length = len(matrix)
+
+        if length == 2:
+            return matrix[0]._matrix[0]*matrix[1]._matrix[1]-matrix[1]._matrix[0]*matrix[0]._matrix[1]
+        temp = 0
+        for i in range(length):
+            temp += (-1)**(i)*matrix[i]._matrix[0]*self._determinantHelper(self._subMatrix(matrix, i, 0))
+        return temp
+
+    def _subMatrix(self, m, i, j):
+        &#34;&#34;&#34;
+        Used by _determinantHelper to create sub-matrices. Takes in the matrix which is the parent, and which row i and column j that are to be excluded.
+        Since there is no obvious benefit for which j to choose, j is set to 1. A future implementation would be to optimize the choice of j.
+        Time complexity is O(n^2), where n is the size of the row and column space of matrix parameter.
+        &#34;&#34;&#34;
+        temp = None
+        if 0 &lt; i &lt; self._N:
+            temp = m[0:i] + m[i+1::]
+        elif i == 0:
+            temp = m[1::]
+        elif i == self._N:
+            temp = m[0:i]
+        for k in range(len(m)-1):
+            new = Matrix(temp[k]._matrix[1::])
+            temp[k] = new
+        return temp
+
+    def trace(self):
+        &#34;&#34;&#34;
+        Only works for square matrices. Calculates and returns the trace, the diagonal sum of the matrix.
+        Once calculated, the value is cached. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if self._trc == None:
+            if self._N != self._M:
+                raise SizeError(&#34;Matrix is not square.&#34;)
+            return self._sum([self._matrix[i]._matrix[i] for i in range(self._N)])
+        else:
+            return self._trc
+
+    def infNorm(self):
+        &#34;&#34;&#34;
+        Calculates and returns the inf norm of a Matrix instance. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if self._is_vec:
+            return max([abs(self[i]) for i in range(self._M*self._N)])
+        return max([self._sum([abs(self[i][k]) for k in range(self._M)]) for i in range(self._N)])
+
+    def getDim(self):
+        &#34;&#34;&#34;Returns the dimension of the Matrix instance as a tuple (rows, columns). For time complexity, see TimeComplexities.&#34;&#34;&#34;
+        return self._dim
+
+    def getString(self):
+        &#34;&#34;&#34;
+        Returns the string representation for the matrix. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        return self.__str__()
+
+    def __str__(self):
+        &#34;&#34;&#34;
+        Overrides python&#39;s built-in str-method and instead returns the string representation for the matrix. For time complexity, see getString().
+        &#34;&#34;&#34;
+        string = &#34;\n\n&#34;
+        if self._is_vec:
+            if self._T:
+                for i in range(self._N):
+                    string += 16*&#34; &#34;+&#34;{:10.2f}&#34;.format(self._matrix[i])+&#34;\n\n\n&#34;
+            elif not self._T:
+                string += &#34;      &#34;.join([&#34;{:10.2f}&#34;.format(self._matrix[i]) for i in range(self._M)])+&#34;\n\n\n&#34;
+            return string + &#34;-&#34;*100 +&#34;\n&#34;
+        elif self._dim == (1, 1):
+            return &#34;{:10.2f}&#34;.format(self[0])
+        else:
+            for i in range(self._N):
+                string += &#34;      &#34;.join([&#34;{:10.2f}&#34;.format(self._matrix[i]._matrix[j]) for j in range(self._M)])+&#34;\n\n\n&#34;
+            return string + &#34;-&#34;*100 + &#34;\n&#34;
+
+
+    def __repr__(self):
+        &#34;&#34;&#34;
+        Overrides python&#39;s __repr__ method and implements a method custom-made for debugging in this class. When printed, it prints whether self is a vector or not, as well as the string representation of the matrix and number of rows and columns. It also prints whether the Matrix instance is transposed or not.
+        Time complexity is some constant value + time complexity of creating a new matrix + the time complexity of __str__.
+        &#34;&#34;&#34;
+        copy = self.copy()
+        copy.transpose()
+        string = &#34;\n\n\n&#34;
+        if self._is_vec:
+            string += str(type(self))+ &#34; (vector) &#34; +&#34; | \n\nself._matrix\n&#34;
+            string += str(self) + &#34;\nself._tmatrix\n\n&#34;
+            string += str(copy)
+            string += &#34; | &#34;+&#34;NoR: &#34;+str(self._N) + &#34; | &#34; + &#34;NoC: &#34;+ str(self._M) + &#34; | &#34; + &#34;transposed: &#34; + str(self._T)
+            return string
+        elif not self._is_vec:
+            string += str(type(self)) + &#34; | \n\nself._matrix\n&#34;
+            string += str(self) + &#34;\nself._tmatrix\n\n&#34;
+            string += str(copy)
+            string += &#34; | &#34;+&#34;NoR: &#34;+str(self._N) + &#34; | &#34; + &#34;NoC: &#34;+ str(self._M) + &#34; | &#34; + &#34;transposed: &#34; + str(self._T)
+            return string
+
+    def _Healthy(self):
+        &#34;&#34;&#34;
+        Checks if the matrix is healthy. Stops the program if something is wrong with the matrix. Time complexity depends on whether self is a vector or a matrix:
+        vector._Healthy() --------&gt; O(n), where n is the dimension of the vector.
+        matrix._Healthy() --------&gt; O(n*m), where n is the number of rows and m is the number of columns.
+        &#34;&#34;&#34;
+        if not self._is_vec:
+            for i in range(self._N):
+                assert len(self[i]._matrix) == self._M
+                assert self[i]._is_vec
+                assert not self[i]._T
+                assert self[i]._N == 1
+                assert self[i]._M != 0
+                for k in range(self._M):
+                    assert isinstance(self[i]._matrix[k], (float, int))
+            if self._N != self._M:
+                assert len(self._tmatrix) == self._M
+                assert self._det == None
+                assert self._trc == None
+            elif self._N == self._M:
+                assert len(self._tmatrix) == self._M
+        elif self._is_vec:
+            assert self._M == 1 or self._N == 1
+            for i in range(self._N*self._M):
+                assert isinstance(self[i], (float, int))
+            if self._T:
+                assert self._M == 1
+            elif not self._T:
+                assert self._N == 1
+        assert self._dim[0] == self._N and self._dim[1] == self._M
+
+def _TestMatrices():
+    &#34;&#34;&#34;
+    A method which tests in the Matrix class can handle incorrect matrices.
+    &#34;&#34;&#34;
+    matris = Matrix([[1, 2, 3], [4, 5, 6], [7, 8, 9], [-17, 11, 12]])
+    try:
+        Matrix([])
+    except SizeError:
+        pass
+    try:
+        Matrix([3, &#34;hej&#34;, None])
+    except TypeError:
+        pass
+    try:
+        Matrix([[&#34;hej&#34;, None, 4], [1, 2, 3]])
+    except TypeError:
+        pass
+    try:
+        Matrix([[1, 2, 3], matris])
+    except TypeError:
+        pass
+    try:
+        Matrix([Matrix([1, 2]), Matrix([1, 2, 3])])
+    except SizeError:
+        pass
+    try:
+        Matrix([Matrix([1, 2]), matris])
+    except SizeError:
+        pass
+    try:
+        Matrix([1, 1, 2, [1, 2]])
+    except TypeError:
+        pass
+    try:
+        Matrix([None, None, None])
+    except TypeError:
+        pass
+    try:
+        Matrix([Matrix([[1], [2]]), Matrix([1, 2, 3])])
+    except SizeError:
+        pass
+    try:
+        Matrix([[[1, 2], [3, 4]], [[5, 6], [8, 9]]])
+    except TypeError:
+        pass
+
+    nymat = Matrix([[1, -1], [1, 1]])
+    assert Matrix([Matrix([[1], [2]])]+[nymat[i] for i in range(2)]) == Matrix([Matrix([1, 2])]+[nymat[i] for i in range(2)]) #If you create a matrix out of a list of vectors, then those vectors will always be converted to row vectors.
+
+def _VectorOperationTest():
+    &#34;&#34;&#34;A method which tests the various vector operations such as the inner product, outer product, scalar multiplication, addition and subtraction, as well as __setitem__ and __getitem__.&#34;&#34;&#34;
+    #testing scalar multiplication and addition
+    #
+    #
+    row = Matrix([0, 0, 1, 0, 0])
+    assert row*2 == 2*row
+    assert 5*row == row + row + row + row + row
+
+    #Testing taking the norm and transposing the vector, as well as the inner and outer product.
+    #
+    #
+    vektor = Matrix([4, -3, -7])
+    assert vektor.infNorm() == 7
+    assert vektor*vektor == 16 + 9 + 49
+    vektor.transpose()
+    assert vektor*vektor == 16 + 9 + 49
+    vektor.transpose()
+    assert vektor + vektor == Matrix([8, -6, -14])
+    vektor2 = vektor.copy()
+    vektor2.transpose()
+    assert vektor*vektor2 == 16 + 9 + 49
+    assert vektor2*vektor == Matrix([[16, -12, -28],[-12, 9, 21],[-28, 21, 49]])
+
+    #Tries to multiply and add vectors of different dimensions
+    #
+    #
+    vektor3 = Matrix([1, 2, 3, 4])
+    try:
+        vektor*vektor3
+    except SizeError:
+        pass
+    try:
+        vektor + vektor3
+    except SizeError:
+        pass
+
+    #Tests the indexing of vectors and slicing, as well as assigning new items to a vector
+    #
+    #
+    averylongvector = Matrix([1, 1, 1, 1, 1, 1, 1, 1])
+    assert averylongvector[4] == 1
+    averylongvector[3::] = Matrix([2, 2, 2, 2, 2])
+    assert averylongvector == Matrix([1, 1, 1, 2, 2, 2, 2, 2])
+    try:
+        averylongvector[3::] = Matrix([3, 3, 3])
+    except SizeError:
+        pass
+    try:
+        averylongvector[3::] = [1, 1]
+    except TypeError:
+        pass
+
+def _MatrixOperationTest():
+    &#34;&#34;&#34;Tests all the matrix operations&#34;&#34;&#34;
+    matris = Matrix([[1, 2, 3], [4, 5, 6], [7, 8, 9], [-17, 11, 12]])
+    matris2 = Matrix([[4, 5, 6], [1, 2, 3], [7, 8, 9]])
+    mekanik2varenkulkurs = Matrix([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13, 14, 15], [16, 17, 18, 19, 20], [21, 22, 23, 24, 25]])
+    row = Matrix([0, 0, 1, 0, 0])
+    col = Matrix([[0],[0],[1],[0],[0]])
+    nymat = Matrix([[1, -1], [1, 1]])
+
+
+    #Tests scalar multiplication and matrix addition, as well as trace and determinant of square matrices. Also checks the inf-norm of a matrix.
+    #
+    #
+    assert 2*matris == matris+matris
+    assert not 3*matris == matris
+    assert matris2**4 == matris2*matris2*matris2*matris2
+    assert matris2.trace() == 4+2+9
+    assert matris2.trace() == matris2.transpose().trace()
+    matris2.transpose()
+    try:
+        matris.trace()
+    except SizeError:
+        pass
+    try:
+        matris.det()
+    except SizeError:
+        pass
+    assert matris.infNorm() == 17 + 11 + 12
+    assert nymat.det() == 2
+    assert nymat.transpose() == Matrix([[1, 1], [-1, 1]])
+
+    #Checks if vector-matrix and matrix-vector multiplication works as it should
+    #
+    #
+    assert row*mekanik2varenkulkurs == Matrix([11, 12, 13, 14, 15])
+    assert mekanik2varenkulkurs*col == Matrix([[3], [8], [13], [18], [23]])
+    try:
+        mekanik2varenkulkurs*row
+    except SizeError:
+        pass
+
+    #Checking of indexing works as it should and assigning new matrices to slices works as well
+    #
+    #
+    matris2[0] = Matrix([80, 80, 80])
+    assert matris2 == Matrix([[80, 80, 80], [1, 2, 3], [7, 8, 9]])
+    new = Matrix([[1, 1, 1, 1, 1], [0, 0, 0, 0, 0], [1, 1, 1, 1, 1]])
+    new.transpose()
+    mekanik2varenkulkurs[2:5] = new
+    assert mekanik2varenkulkurs == Matrix([[1, 2, 1, 0, 1], [6, 7, 1, 0, 1], [11, 12, 1, 0, 1], [16, 17, 1, 0, 1], [21, 22, 1, 0, 1]])
+    mew = Matrix([[5, 5, 5, 5, 5], [33, 33, 33, 33, 33]])
+    mekanik2varenkulkurs[1:3] = mew
+    assert mekanik2varenkulkurs == Matrix([[1, 2, 1, 0, 1], [5, 5, 5, 5, 5], [33, 33, 33, 33, 33], [16, 17, 1, 0, 1], [21, 22, 1, 0, 1]])
+    matris2[1][0] = 1000
+    assert matris2 == Matrix([[80, 80, 80], [1000, 2, 3], [7, 8, 9]])
+    try:
+        nymat[1] = [1, 2]
+    except TypeError:
+        pass
+    try:
+        matris**2
+    except SizeError:
+        pass
+    try:
+        nymat[1][1] = None
+    except TypeError:
+        pass
+    try:
+        nymat[10]
+    except IndexError:
+        pass
+
+def main():
+    #test cases
+
+    #testing if Matrix stops the creation of incorrect matrices:
+    _TestMatrices()
+
+    #Testing operations:
+    #Vectors:
+    _VectorOperationTest()
+
+    #Matrices:
+    _MatrixOperationTest()
+    #matris = Matrix([[1, 2, 3], [4, 5, 6], [7, 8, 9], [-17, 11, 12]])
+    #print(matris)
+    #matris.transpose()
+    #print(matris)
+
+if __name__ == &#34;__main__&#34;:
+    main()
+
+#TODO: Maybe add __matmul__ and define A@B as the exterior product between matrices (tensor product), where A and B are Matrix instances. Maybe a better determinant algorithm using LU-factorization.</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="MatrixModule.main"><code class="name flex">
+<span>def <span class="ident">main</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def main():
+    #test cases
+
+    #testing if Matrix stops the creation of incorrect matrices:
+    _TestMatrices()
+
+    #Testing operations:
+    #Vectors:
+    _VectorOperationTest()
+
+    #Matrices:
+    _MatrixOperationTest()</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="MatrixModule.Matrix"><code class="flex name class">
+<span>class <span class="ident">Matrix</span></span>
+<span>(</span><span>m)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>A class for creating NxM matrices.</p>
+<p>Creates a new Matrix instance. "m" is either a Matrix instance, a list of matrix instances (vectors), or a list of either floats, ints. m can also be a scalar to create a 1x1 matrix.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Matrix():
+    &#34;&#34;&#34;A class for creating NxM matrices.&#34;&#34;&#34;
+
+    def __init__(self, m):
+        &#34;&#34;&#34;
+        Creates a new Matrix instance. &#34;m&#34; is either a Matrix instance, a list of matrix instances (vectors), or a list of either floats, ints. m can also be a scalar to create a 1x1 matrix.
+        &#34;&#34;&#34;
+        self._T = False
+        self._matrix = []
+        self._tmatrix = []
+        self._is_vec = True
+        self._det = None
+        self._trc = None
+        self._N = 0
+        self._M = 0
+        if isinstance(m, Matrix):
+            self._mIsMatrix(m)
+        elif isinstance(m, list):
+            self._mIsList(m)
+        elif isinstance(m, (float, int)):
+            self._mIsNumber(m)
+        else:
+            raise TypeError(&#34;Input has to be a list, Matrix, float, int.&#34;)
+        self._dim = (self._N, self._M)
+        if self._tmatrix == []:
+            self._tmatrix = self._transposer()
+        self._Healthy()
+
+    def _mIsMatrix(self, m):
+        &#34;&#34;&#34;
+        Assistive function for __init__(). Takes in a Matrix instance &#34;m&#34; and makes self a copy of &#34;m&#34;.
+        Time complexity is O(N*M), where N is the number of rows in &#34;m&#34; and M is the number of columns in &#34;m&#34;.
+        &#34;&#34;&#34;
+        temp = m.copy()
+        self._matrix = temp._matrix
+        self._N = temp._N
+        self._M = temp._M
+        self._is_vec = temp._is_vec
+        self._T = temp._T
+        self._tmatrix = temp._tmatrix
+
+    def _mIsList(self, m):
+        &#34;&#34;&#34;
+        Assistive function for __init__(). Takes in a list &#34;m&#34; and sets attributes of self depending on the contents of &#34;m&#34;.
+        Time complexity depends on contents of m (see TimeComplexities).
+        &#34;&#34;&#34;
+        length = len(m)
+        if length == 0:
+            raise SizeError(&#34;Cannot initiate an empty matrix&#34;)
+        else:
+            temp_length = 0
+            content_type = None
+            for i in range(length):
+                if content_type == None:
+                    if isinstance(m[i], (float, int)):
+                        content_type = (float, int)
+                    elif isinstance(m[i], list):
+                        content_type = list
+                    elif isinstance(m[i], Matrix):
+                        content_type = Matrix
+                elif not isinstance(m[i], content_type):
+                    raise TypeError(&#34;Element types in provided list are not consistent&#34;)
+                if isinstance(m[i], Matrix):
+                    if not m[i]._is_vec:
+                        raise SizeError(&#34;Elements in provided list must be vectors or 1D lists&#34;)
+                    vec = m[i].copy()
+                    if vec._T:
+                        vec.transpose()
+                    if temp_length == 0:
+                        temp_length = vec._M*vec._N
+                    elif temp_length != vec._M*vec._N:
+                        raise SizeError(&#34;Sizes of vectors in provided list are not consistent&#34;)
+                    self._matrix.append(vec)
+                    if self._is_vec and temp_length &gt; 1:
+                        self._is_vec = False
+                    continue
+                elif isinstance(m[i], (float, int)):
+                    continue
+                elif isinstance(m[i], list):
+                    for k in range(len(m[i])):
+                        if not isinstance(m[i][k], (float, int)):
+                            raise TypeError(&#34;Matrix row vectors must consist of numbers (float, int)&#34;)
+                    if temp_length == 0:
+                        temp_length = len(m[i])
+                    elif temp_length != len(m[i]):
+                        raise SizeError(&#34;Dimensions of rows in inputted list are not consistent&#34;)
+                    if temp_length &gt; 1:
+                        self._is_vec = False
+                else:
+                    raise TypeError(&#34;Provided list must contain either floats, ints or lists.&#34;)
+        if self._is_vec:
+            self._T = True
+            for i in range(length):
+                if isinstance(m[i], (float, int)):
+                    self._T = False
+                elif (not self._T and isinstance(m[i], (list, Matrix))) or (i &gt; 0 and self._T and isinstance(m[i], (float, int))):
+                    raise TypeError(&#34;Element types in provided array are not consistent.&#34;)
+                elif not isinstance(m[i][0], (float, int)):
+                    raise TypeError(&#34;Column vectors cannot contain arrays of dimension greater than 1&#34;)
+            if self._T:
+                if content_type == Matrix:
+                    self._matrix = [m[i]._matrix[0] for i in range(length)]
+                    self._N = length
+                    self._M = 1
+                elif content_type == list:
+                    self._matrix = [m[i][0] for i in range(length)]
+                    self._N = length
+                    self._M = 1
+            elif not self._T:
+                self._matrix = [m[i] for i in range(length)]
+                self._N = 1
+                self._M = length
+        elif not self._is_vec:
+            if self._matrix == []:
+                self._matrix = [Matrix(m[i]) for i in range(length)]
+            self._N = length
+            self._M = temp_length
+
+    def _mIsNumber(self, m):
+        &#34;&#34;&#34;Assistive function for __init__(). Takes in an int or float &#34;m&#34;. Time complexity is O(1).&#34;&#34;&#34;
+        self._matrix = [m]
+        self._N = 1
+        self._M = 1
+
+    def _transposer(self):
+        &#34;&#34;&#34;
+        A private method which returns a list that contains the transposed rows of self._matrix.
+        If self is a vector (either self._M or self._N is 1), then time complexity is O(1).
+        However, if self is not a vector, then the time complexity is O(M*N), where M is the number of columns in self and N is the number of rows in self.
+        &#34;&#34;&#34;
+        if self._is_vec:
+            return self._matrix
+        return [Matrix([self._matrix[k]._matrix[i] for k in range(self._N)]) for i in range(self._M)]
+
+    def add(self, other):
+        &#34;&#34;&#34;
+        Allows matrix addition (including vectors). When adding Matrix instances, one can also use the &#34;+&#34;-operator. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        return self.__add__(other)
+
+    def __add__(self, other):
+        &#34;&#34;&#34;
+        Overrides the &#39;+&#39;-operator and implements matrix addition in its place. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if not isinstance(other, Matrix):
+            raise TypeError(&#34;Can only add matrices to matrices&#34;)
+        if other._dim != self._dim:
+            raise SizeError(&#34;Matrix addition only works for matrices of equal dimensions.&#34;)
+        else:
+            if self._is_vec and other._is_vec:
+                if not self._T:
+                    return Matrix([self[j]+other[j] for j in range(self._M)])
+                elif self.T:
+                    return Matrix([self[j]+other[j] for j in range(self._N)])
+            elif not self._is_vec and not other._is_vec:
+                return Matrix([[self._matrix[i][j]+other._matrix[i][j] for j in range(self._M)] for i in range(self._N)])
+
+    __radd__ = __add__
+
+    def __iadd__(self, other):
+        &#34;&#34;&#34;Overrides the &#34;+=&#34; operator. Has the same time complexity as __add__().&#34;&#34;&#34;
+        return self + other
+
+    def subtract(self, other):
+        &#34;&#34;&#34;
+        Allows matrix subtraction (including vectors). When subtracting Matrix instances, one can also use the &#34;-&#34;-operator. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        return self.__sub__(other)
+
+    def __sub__(self, other):
+        &#34;&#34;&#34;
+        Overrides the &#39;-&#39;-operator and implements matrix subtraction in its place. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if not isinstance(other, Matrix):
+            raise TypeError(&#34;Can only add matrices to matrices&#34;)
+        if other._dim != self._dim:
+            raise SizeError(&#34;Matrix addition only works for matrices of equal dimensions.&#34;)
+        else:
+            if self._is_vec and other._is_vec:
+                if not self._T:
+                    return Matrix([self[j]+other[j] for j in range(self._M)])
+                elif self.T:
+                    return Matrix([self[j]+other[j] for j in range(self._N)])
+            elif not self._is_vec and not other._is_vec:
+                return Matrix([[self._matrix[i][j]+other._matrix[i][j] for j in range(self._M)] for i in range(self._N)])
+
+    def __isub__(self, other):
+        &#34;&#34;&#34;Overrides the &#34;-=&#34; operator. Has the same time complexity as __sub__().&#34;&#34;&#34;
+        return self - other
+
+    def multiply(self, other):
+        &#34;&#34;&#34;
+        Allows matrix multiplication (including vectors). When multiplying matrix instances, one can also use the &#34;*&#34;-operator. For rules, see README. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        return self.__mul__(other)
+
+    def __mul__(self, other):
+        &#34;&#34;&#34;
+        Overrides the &#39;*&#39;-operator and implements matrix multiplication in its place. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if not isinstance(other, (float, int, Matrix)):
+            raise TypeError(&#34;Can only multiply a matrix by a scalar, vector or matrix.&#34;)
+        if isinstance(other, (float, int)):
+            return self._scalarMul(other)
+        else:
+            if self._is_vec and other._is_vec:
+                return self._mulVecVec(other)
+            else:
+                return self._mulMatMat(other)
+
+    def _scalarMul(self, other):
+        &#34;&#34;&#34;
+        Helper method for __mul__. Takes in a scalar and returns a new vector. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if self._is_vec:
+            return Matrix([self._matrix[j]*other for j in range(self._M)])
+        elif not self._is_vec:
+            return Matrix([[self._matrix[i]._matrix[j]*other for j in range(self._M)] for i in range(self._N)])
+
+    def _mulVecVec(self, other):
+        &#34;&#34;&#34;
+        Helper method for __mul__. Takes in a vector and returns a number or a matrix. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if self._M*self._N != other._M*other._N:
+            raise SizeError(&#34;Vectors must be of equal length.&#34;)
+        if (self._T and other._T) or (not self._T and not other._T) or (not self._T and other._T):
+            return self._sum([self._matrix[i]*other._matrix[i] for i in range(self._N*self._M)])
+        elif self._T and not other._T:
+            temp = []
+            for i in range(self._N*self._M):
+                temp.append([self._matrix[i]*other._matrix[k] for k in range(other._N*other._M)])
+            return Matrix(temp)
+
+    def _mulMatMat(self, other):
+        &#34;&#34;&#34;
+        Helper method for __mul__. Takes in a matrix and returns a new matrix (this includes a vector as well). For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if self._M != other._N:
+            raise SizeError(&#34;row space of the left matrix is not the same dimension as the column space of the right one.&#34;)
+        temp_0 = []
+        if self._is_vec:
+            for i in range(other._M):
+                temp = []
+                for k in range(self._M):
+                    temp.append(self._matrix[k]*other._matrix[k]._matrix[i])
+                temp_0.append(self._sum(temp))
+            return Matrix(temp_0)
+        elif not self._is_vec:
+            if other._is_vec:
+                for i in range(self._N):
+                    temp_0.append([self._matrix[i]*other])
+                return Matrix(temp_0)
+            elif not other._is_vec:
+                for i in range(self._N):
+                    temp_0.append([self._matrix[i]*other._tmatrix[k] for k in range(other._M)])
+                return Matrix(temp_0)
+
+    def __rmul__(self, other):
+        &#34;&#34;&#34;
+        Defines __rmul__ for matrices so that scalar multiplication is possible. Takes in a scalar and returns a vector or matrix. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if not isinstance(other, (int, float)):
+            raise TypeError(&#34;Cannot multiply a matrix from the left by anything other than an int or a float&#34;)
+        return self*other
+
+    def power(self, x):
+        &#34;&#34;&#34;
+        Takes in an exponent and returns a new matrix.. This only works for square matrices. One can also use the &#34;**&#34;-operator to raise matrices to a power.
+        For time complexity, see TimeComplexities.&#34;&#34;&#34;
+        return self.__pow__(x)
+
+    def __pow__(self, x):
+        &#34;&#34;&#34;
+        Overrides the &#34;**&#34;-operator and implements powers of matrices instead. This only works for square matrices.
+        Takes in an exponent and returns a new matrix. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if self._N != self._M:
+            raise SizeError(&#34;Cannot take the power of a non-square matrix.&#34;)
+        temp_mat = self.copy()
+        for i in range(x-1):
+            temp_mat *= self
+        return temp_mat
+
+    def copy(self):
+        &#34;&#34;&#34;
+        Returns a copy of this matrix. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        new_copy = []
+        if self._is_vec:
+            for i in range(self._N*self._M):
+                if not self._T:
+                    new_copy.append(self._matrix[i])
+                elif self._T:
+                    new_copy.append([self._matrix[i]])
+            new_copy = Matrix(new_copy)
+        elif not self._is_vec:
+            for i in range(self._N):
+                new_copy.append([self._matrix[i][k] for k in range(self._M)])
+            new_copy = Matrix(new_copy)
+        new_copy._T = self._T
+        return new_copy
+
+    def get(self, index):
+        &#34;&#34;&#34;
+        Allows accessing elements in a Matrix instance. One can also use the &#34;[]&#34;-delimeter to access elements, just as you would with lists, though with some new rules (see README). Takes in an int or a slice and returns either a number or a matrix.
+        For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        return self.__getitem__(index)
+
+    def __getitem__(self, index):
+        &#34;&#34;&#34;
+        Overrides the &#39;[]&#39;-delimeter and implements accessing the element at index in a Matrix-instance. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if isinstance(index, str):
+            raise SizeError(&#34;jag kom igenom&#34;)
+        if isinstance(index, slice):
+            start = index.start
+            stop = index.stop
+            if start == None:
+                start = 0
+            if stop == None:
+                stop = self._N
+            if start &lt; 0:
+                start += self._N
+            if stop &lt; 0:
+                stop += self._N
+            if start &gt;= stop:
+                raise IndexError(&#34;Start index must be less than stop index&#34;)
+        return_item = self._matrix[index]
+        if isinstance(return_item, (int, float, Matrix)):
+            return return_item
+        elif isinstance(return_item, list):
+            temp_mat = Matrix(return_item)
+            if temp_mat._is_vec:
+                return temp_mat
+            elif not temp_mat._is_vec:
+                temp_bool = False
+                for i in range(temp_mat._N):
+                    if temp_mat._matrix[i]._T:
+                        temp_bool = True
+                    elif temp_bool and not temp_mat._matrix[i]._T:
+                        raise SizeError(&#34;Vectors in a matrix must all either be transposed or not transposed&#34;)
+                temp_mat._T = True
+                return temp_mat
+
+    def set(self, item, start, stop = None,):
+        &#34;&#34;&#34;
+        This method allows assignment throug indexing or slicing. One can also (is encouraged to) use the &#34;[]&#34;-delimeters, i.e. expressions of the form a[i:j] = something new or a[i] = something new.
+        Takes in an item (int, float or Matrix) and a start and stop index (default is None). Can only replace multiple columns or multiple rows in matrices, not arbitrary rectangles in the matrix.
+        For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        return self.__setitem__(slice(start, stop), item)
+
+    def __setitem__(self, index, item):
+        &#34;&#34;&#34;
+        This method allows assignment throug indexing or slicing, i.e. expressions of the form a[i:j] = some new matrix.
+        Takes in an index as an int or a slice and an item (int, float or Matrix). Can only replace multiple columns or multiple rows in matrices, not arbitrary rectangles in the matrix.
+        For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if not isinstance(item, (float, int, Matrix)):
+            raise TypeError(&#34;New item must be either int, float or another Matrix.&#34;)
+        if not isinstance(index, (int, slice)):
+            raise IndexError(&#34;index must be either int or slice.&#34;)
+        if isinstance(index, slice):
+            self._indexIsSlice(index, item)
+        elif isinstance(index, int):
+            self._indexIsInt(index, item)
+        self._tmatrix = self._transposer()
+        self._det = None
+        if self._N == self._M:
+            self._det = self.det()
+        self._Healthy()
+
+    def _indexIsSlice(self, index, item):
+        &#34;&#34;&#34;
+        Assistive method for __setitem__ and handles slicing. Takes in a slice and an item (Matrix, int, float) and makes the replacements.
+        &#34;&#34;&#34;
+        start = index.start
+        stop = index.stop
+        if isinstance(item, Matrix):
+            if index.step != None:
+                if index.step != 1:
+                    raise IndexError(&#34;Cannot replace non-adjacent rows or columns with slice&#34;)
+            if start == None:
+                start = 0
+            if item._T and stop == None:
+                stop = self._N
+            elif not item._T and stop == None:
+                stop = self._M
+            if item._T and start &lt; 0:
+                start += self._N
+            elif not item._T and start &lt; 0:
+                start += self._M
+            if item._T and stop &lt; 0:
+                stop += self._N
+            elif not item._T and stop &lt; 0:
+                stop += self._M
+            if start &lt; 0 or stop &lt; 0:
+                raise IndexError(&#34;index out of range.&#34;)
+            if start &gt;= stop:
+                raise IndexError(&#34;start index must be less than stop index&#34;)
+            if self._is_vec:
+                if not item._is_vec:
+                    raise SizeError(&#34;Cannot insert matrices into a vector.&#34;)
+                if stop - start &gt; self._M*self._N:
+                    raise IndexError(&#34;Index out of bounds&#34;)
+                elif item._N*item._M == len(self._matrix[index]):
+                    temp_mat = item.copy()
+                    self._matrix[index] = temp_mat._matrix
+                else:
+                    raise SizeError(&#34;Size of new sub-vector does not match size of slice&#34;)
+            elif not self._is_vec:
+                if not item._is_vec:
+                    if item._T:
+                        if item._N == self._N and item._M == (stop-start):
+                            temp_mat = item.copy()
+                            for i in range(item._N):
+                                for k in range(start, stop):
+                                    self._matrix[i]._matrix[k] = temp_mat._matrix[i]._matrix[k-start]
+                        else:
+                            raise SizeError(&#34;Size of provided new matrix does not match slice&#34;)
+                    elif not item._T:
+                        if item._M == self._M and item._N == (stop-start):
+                            temp_mat = item.copy()
+                            self._matrix[start:stop] = temp_mat._matrix
+                        else:
+                            raise SizeError(&#34;Dimensions of new row vectors do not match the row-space of the matrix&#34;)
+                elif item._is_vec:
+                    if item._T and item._N == self._N and (stop-start) == 1:
+                        temp_mat = item.copy()
+                        for i in range(self._N):
+                            self._matrix[i]._matrix[start] = temp_mat._matrix[i]
+                    elif not item._T and item._M == self._M and (stop-start) == 1:
+                        temp_mat = item.copy()
+                        self._matrix[start] = temp_mat
+                    else:
+                        raise SizeError(&#34;Size of slice and new vector are not the same&#34;)
+
+        elif isinstance(item, (int, float)):
+            if start == None:
+                start = 0
+            if self._T and stop == None:
+                stop = self._N
+            elif not self._T and stop == None:
+                stop = self._M
+            if self._T and start &lt; 0:
+                start += self._N
+            elif not self._T and start &lt; 0:
+                start += self._M
+            if self._T and stop &lt; 0:
+                stop += self._N
+            elif not self._T and stop &lt; 0:
+                stop += self._M
+            if start &lt; 0 or stop &lt; 0:
+                raise IndexError(&#34;index out of range.&#34;)
+            if start &gt;= stop:
+                raise IndexError(&#34;start index must be less than stop index&#34;)
+            if not self._is_vec:
+                raise SizeError(&#34;Cannot replace a vector by a number&#34;)
+            elif self._is_vec:
+                if start - stop &gt; 1:
+                    raise SizeError(&#34;Size of slice and number of replaced elements do not match&#34;)
+                self._matrix[index] = item
+
+    def _indexIsInt(self, index, item):
+        &#34;&#34;&#34;
+        Assistive method for __setitem__ and handles indexes. Takes in an int and an item (Matrix, int, float) and makes the replacement.
+        &#34;&#34;&#34;
+        if self._is_vec:
+            if isinstance(item, Matrix):
+                raise SizeError(&#34;Item must be float or int.&#34;)
+            self._matrix[index] = item
+        elif not self._is_vec: #kolla på den här senare
+            if isinstance(item, (int, float)):
+                raise TypeError(&#34;Item must be a vector.&#34;)
+            elif not item._is_vec:
+                raise SizeError(&#34;Cannot replace a row with a matrix&#34;)
+            if item._T:
+                if item._N != self._N:
+                    raise SizeError(&#34;Dimension of column vector is not the same as column space of matrix.&#34;)
+                temp_mat = item.copy()
+                for i in range(self._N):
+                    self._matrix[i]._matrix[index] = temp_mat._matrix[i]
+            elif not item._T:
+                if item._M != self._M:
+                    raise SizeError(&#34;Dimension of row vector is not the same as row space of matrix.&#34;)
+                temp_mat = item.copy()
+                self._matrix[index] = temp_mat
+
+    def isEqual(self, other):
+        &#34;&#34;&#34;
+        Allows comparing Matrix instances. One can also (and is encouraged to) use the &#34;==&#34;-operator instead. Expects input as a Matrix instance and returns True or False depending on whether this matrix and other are the same or not.
+        For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        return self.__eq__(other)
+
+    def __eq__(self, other):
+        &#34;&#34;&#34;
+        Overrides the &#34;==&#34;-operator and implements comparing Matrix instances. Expects input as a Matrix instance and returns True or False depending on whether self and input are the same or not.
+        For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if self._is_vec and other._is_vec:
+            if (self._T and not other._T) or (not self._T and other._T):
+                return False
+            elif self._T and other._T:
+                for i in range(self._N):
+                    if self._matrix[i] != other._matrix[i]:
+                        return False
+                return True
+            elif not self._T and not other._T:
+                for i in range(self._M):
+                    if self._matrix[i] != other._matrix[i]:
+                        return False
+                return True
+        elif self._N != other._N or self._M != other._M:
+            return False
+        for i in range(self._N):
+            for j in range(self._M):
+                if self._matrix[i]._matrix[j] != other._matrix[i]._matrix[j]:
+                    return False
+        return True
+
+    def isNotEqual(self, other):
+        &#34;&#34;&#34;
+        Allows comparing Matrix instances. One can also (and is encouraged to) use the &#34;!=&#34;-operator instead. Expects input as a Matrix instance and returns False or True depending on whether this matrix and other are the same or not.
+        This method simply returns the opposite of what isEqual() returns, so for time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+
+    def __neq__(self, other):
+        &#34;&#34;&#34;
+        Overrides the &#34;!=&#34;-operator and implements comparing Matrix instances. Expects input as a Matrix instance and returns True or False depending on whether self and input are the same or not.
+        This method makes full use of __eq__, and so for time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if self == other:
+            return False
+        return True
+
+    def transpose(self):
+        &#34;&#34;&#34;Transposes the matrix. Returns &#39;self&#39; after the transponation so that one can access columns with indexing. For time complexity, see TimeComplexities.&#34;&#34;&#34;
+        self._matrix, self._tmatrix = self._tmatrix, self._matrix
+        self._N, self._M = self._M, self._N
+        self._dim = (self._N, self._M)
+        if self._T:
+            self._T = False
+        elif not self._T:
+            self._T = True
+        self._Healthy()
+        return self
+
+    def _sum(self, a):
+        &#34;&#34;&#34;Return the sum of the elements in the list a. Time complexity is dependant on time complexity of _sumHelper, which is O(n).&#34;&#34;&#34;
+        return self._sumHelper(a, 0, len(a)-1)
+
+    def _sumHelper(self, a, i, j):
+        &#34;&#34;&#34;Return the sum of the elements from a[i] to a[j]. Time complexity is O(n).&#34;&#34;&#34;
+        if i &gt; j:
+                return 0
+        if i == j:
+                return a[i]
+        mid = (i+j)//2
+        return self._sumHelper(a, i, mid) + self._sumHelper(a, mid+1, j)
+
+    def det(self):
+        &#34;&#34;&#34;
+        DISCLAIMER: This algorithm is VERY inefficient. Therefore, it is not well-suited for large matrices.
+        Only works for square matrices. Calculates and returns the determinant of the matrix.
+        Once calculated, the value is cached. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if self._det is None:
+            if self._N*self._M == 1 or self._N != self._M:
+                raise SizeError(&#34;Matrix must be square and at least 2x2&#34;)
+            self._det = self._determinantHelper(self._matrix)
+            return self._det
+        elif self._det != None:
+            return self._det
+
+    def _determinantHelper(self, matrix):
+        &#34;&#34;&#34;A recursive algorithm which takes in a matrix and calculates and returns the determinant. Time complexity of the algorithm scales factorially, O(n!)&#34;&#34;&#34;
+        length = len(matrix)
+
+        if length == 2:
+            return matrix[0]._matrix[0]*matrix[1]._matrix[1]-matrix[1]._matrix[0]*matrix[0]._matrix[1]
+        temp = 0
+        for i in range(length):
+            temp += (-1)**(i)*matrix[i]._matrix[0]*self._determinantHelper(self._subMatrix(matrix, i, 0))
+        return temp
+
+    def _subMatrix(self, m, i, j):
+        &#34;&#34;&#34;
+        Used by _determinantHelper to create sub-matrices. Takes in the matrix which is the parent, and which row i and column j that are to be excluded.
+        Since there is no obvious benefit for which j to choose, j is set to 1. A future implementation would be to optimize the choice of j.
+        Time complexity is O(n^2), where n is the size of the row and column space of matrix parameter.
+        &#34;&#34;&#34;
+        temp = None
+        if 0 &lt; i &lt; self._N:
+            temp = m[0:i] + m[i+1::]
+        elif i == 0:
+            temp = m[1::]
+        elif i == self._N:
+            temp = m[0:i]
+        for k in range(len(m)-1):
+            new = Matrix(temp[k]._matrix[1::])
+            temp[k] = new
+        return temp
+
+    def trace(self):
+        &#34;&#34;&#34;
+        Only works for square matrices. Calculates and returns the trace, the diagonal sum of the matrix.
+        Once calculated, the value is cached. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if self._trc == None:
+            if self._N != self._M:
+                raise SizeError(&#34;Matrix is not square.&#34;)
+            return self._sum([self._matrix[i]._matrix[i] for i in range(self._N)])
+        else:
+            return self._trc
+
+    def infNorm(self):
+        &#34;&#34;&#34;
+        Calculates and returns the inf norm of a Matrix instance. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        if self._is_vec:
+            return max([abs(self[i]) for i in range(self._M*self._N)])
+        return max([self._sum([abs(self[i][k]) for k in range(self._M)]) for i in range(self._N)])
+
+    def getDim(self):
+        &#34;&#34;&#34;Returns the dimension of the Matrix instance as a tuple (rows, columns). For time complexity, see TimeComplexities.&#34;&#34;&#34;
+        return self._dim
+
+    def getString(self):
+        &#34;&#34;&#34;
+        Returns the string representation for the matrix. For time complexity, see TimeComplexities.
+        &#34;&#34;&#34;
+        return self.__str__()
+
+    def __str__(self):
+        &#34;&#34;&#34;
+        Overrides python&#39;s built-in str-method and instead returns the string representation for the matrix. For time complexity, see getString().
+        &#34;&#34;&#34;
+        string = &#34;\n\n&#34;
+        if self._is_vec:
+            if self._T:
+                for i in range(self._N):
+                    string += 16*&#34; &#34;+&#34;{:10.2f}&#34;.format(self._matrix[i])+&#34;\n\n\n&#34;
+            elif not self._T:
+                string += &#34;      &#34;.join([&#34;{:10.2f}&#34;.format(self._matrix[i]) for i in range(self._M)])+&#34;\n\n\n&#34;
+            return string + &#34;-&#34;*100 +&#34;\n&#34;
+        elif self._dim == (1, 1):
+            return &#34;{:10.2f}&#34;.format(self[0])
+        else:
+            for i in range(self._N):
+                string += &#34;      &#34;.join([&#34;{:10.2f}&#34;.format(self._matrix[i]._matrix[j]) for j in range(self._M)])+&#34;\n\n\n&#34;
+            return string + &#34;-&#34;*100 + &#34;\n&#34;
+
+
+    def __repr__(self):
+        &#34;&#34;&#34;
+        Overrides python&#39;s __repr__ method and implements a method custom-made for debugging in this class. When printed, it prints whether self is a vector or not, as well as the string representation of the matrix and number of rows and columns. It also prints whether the Matrix instance is transposed or not.
+        Time complexity is some constant value + time complexity of creating a new matrix + the time complexity of __str__.
+        &#34;&#34;&#34;
+        copy = self.copy()
+        copy.transpose()
+        string = &#34;\n\n\n&#34;
+        if self._is_vec:
+            string += str(type(self))+ &#34; (vector) &#34; +&#34; | \n\nself._matrix\n&#34;
+            string += str(self) + &#34;\nself._tmatrix\n\n&#34;
+            string += str(copy)
+            string += &#34; | &#34;+&#34;NoR: &#34;+str(self._N) + &#34; | &#34; + &#34;NoC: &#34;+ str(self._M) + &#34; | &#34; + &#34;transposed: &#34; + str(self._T)
+            return string
+        elif not self._is_vec:
+            string += str(type(self)) + &#34; | \n\nself._matrix\n&#34;
+            string += str(self) + &#34;\nself._tmatrix\n\n&#34;
+            string += str(copy)
+            string += &#34; | &#34;+&#34;NoR: &#34;+str(self._N) + &#34; | &#34; + &#34;NoC: &#34;+ str(self._M) + &#34; | &#34; + &#34;transposed: &#34; + str(self._T)
+            return string
+
+    def _Healthy(self):
+        &#34;&#34;&#34;
+        Checks if the matrix is healthy. Stops the program if something is wrong with the matrix. Time complexity depends on whether self is a vector or a matrix:
+        vector._Healthy() --------&gt; O(n), where n is the dimension of the vector.
+        matrix._Healthy() --------&gt; O(n*m), where n is the number of rows and m is the number of columns.
+        &#34;&#34;&#34;
+        if not self._is_vec:
+            for i in range(self._N):
+                assert len(self[i]._matrix) == self._M
+                assert self[i]._is_vec
+                assert not self[i]._T
+                assert self[i]._N == 1
+                assert self[i]._M != 0
+                for k in range(self._M):
+                    assert isinstance(self[i]._matrix[k], (float, int))
+            if self._N != self._M:
+                assert len(self._tmatrix) == self._M
+                assert self._det == None
+                assert self._trc == None
+            elif self._N == self._M:
+                assert len(self._tmatrix) == self._M
+        elif self._is_vec:
+            assert self._M == 1 or self._N == 1
+            for i in range(self._N*self._M):
+                assert isinstance(self[i], (float, int))
+            if self._T:
+                assert self._M == 1
+            elif not self._T:
+                assert self._N == 1
+        assert self._dim[0] == self._N and self._dim[1] == self._M</code></pre>
+</details>
+<h3>Methods</h3>
+<dl>
+<dt id="MatrixModule.Matrix.add"><code class="name flex">
+<span>def <span class="ident">add</span></span>(<span>self, other)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Allows matrix addition (including vectors). When adding Matrix instances, one can also use the "+"-operator. For time complexity, see TimeComplexities.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def add(self, other):
+    &#34;&#34;&#34;
+    Allows matrix addition (including vectors). When adding Matrix instances, one can also use the &#34;+&#34;-operator. For time complexity, see TimeComplexities.
+    &#34;&#34;&#34;
+    return self.__add__(other)</code></pre>
+</details>
+</dd>
+<dt id="MatrixModule.Matrix.copy"><code class="name flex">
+<span>def <span class="ident">copy</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns a copy of this matrix. For time complexity, see TimeComplexities.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def copy(self):
+    &#34;&#34;&#34;
+    Returns a copy of this matrix. For time complexity, see TimeComplexities.
+    &#34;&#34;&#34;
+    new_copy = []
+    if self._is_vec:
+        for i in range(self._N*self._M):
+            if not self._T:
+                new_copy.append(self._matrix[i])
+            elif self._T:
+                new_copy.append([self._matrix[i]])
+        new_copy = Matrix(new_copy)
+    elif not self._is_vec:
+        for i in range(self._N):
+            new_copy.append([self._matrix[i][k] for k in range(self._M)])
+        new_copy = Matrix(new_copy)
+    new_copy._T = self._T
+    return new_copy</code></pre>
+</details>
+</dd>
+<dt id="MatrixModule.Matrix.det"><code class="name flex">
+<span>def <span class="ident">det</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>DISCLAIMER: This algorithm is VERY inefficient. Therefore, it is not well-suited for large matrices.
+Only works for square matrices. Calculates and returns the determinant of the matrix.
+Once calculated, the value is cached. For time complexity, see TimeComplexities.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def det(self):
+    &#34;&#34;&#34;
+    DISCLAIMER: This algorithm is VERY inefficient. Therefore, it is not well-suited for large matrices.
+    Only works for square matrices. Calculates and returns the determinant of the matrix.
+    Once calculated, the value is cached. For time complexity, see TimeComplexities.
+    &#34;&#34;&#34;
+    if self._det is None:
+        if self._N*self._M == 1 or self._N != self._M:
+            raise SizeError(&#34;Matrix must be square and at least 2x2&#34;)
+        self._det = self._determinantHelper(self._matrix)
+        return self._det
+    elif self._det != None:
+        return self._det</code></pre>
+</details>
+</dd>
+<dt id="MatrixModule.Matrix.get"><code class="name flex">
+<span>def <span class="ident">get</span></span>(<span>self, index)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Allows accessing elements in a Matrix instance. One can also use the "[]"-delimeter to access elements, just as you would with lists, though with some new rules (see README). Takes in an int or a slice and returns either a number or a matrix.
+For time complexity, see TimeComplexities.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get(self, index):
+    &#34;&#34;&#34;
+    Allows accessing elements in a Matrix instance. One can also use the &#34;[]&#34;-delimeter to access elements, just as you would with lists, though with some new rules (see README). Takes in an int or a slice and returns either a number or a matrix.
+    For time complexity, see TimeComplexities.
+    &#34;&#34;&#34;
+    return self.__getitem__(index)</code></pre>
+</details>
+</dd>
+<dt id="MatrixModule.Matrix.getDim"><code class="name flex">
+<span>def <span class="ident">getDim</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns the dimension of the Matrix instance as a tuple (rows, columns). For time complexity, see TimeComplexities.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getDim(self):
+    &#34;&#34;&#34;Returns the dimension of the Matrix instance as a tuple (rows, columns). For time complexity, see TimeComplexities.&#34;&#34;&#34;
+    return self._dim</code></pre>
+</details>
+</dd>
+<dt id="MatrixModule.Matrix.getString"><code class="name flex">
+<span>def <span class="ident">getString</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns the string representation for the matrix. For time complexity, see TimeComplexities.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getString(self):
+    &#34;&#34;&#34;
+    Returns the string representation for the matrix. For time complexity, see TimeComplexities.
+    &#34;&#34;&#34;
+    return self.__str__()</code></pre>
+</details>
+</dd>
+<dt id="MatrixModule.Matrix.infNorm"><code class="name flex">
+<span>def <span class="ident">infNorm</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Calculates and returns the inf norm of a Matrix instance. For time complexity, see TimeComplexities.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def infNorm(self):
+    &#34;&#34;&#34;
+    Calculates and returns the inf norm of a Matrix instance. For time complexity, see TimeComplexities.
+    &#34;&#34;&#34;
+    if self._is_vec:
+        return max([abs(self[i]) for i in range(self._M*self._N)])
+    return max([self._sum([abs(self[i][k]) for k in range(self._M)]) for i in range(self._N)])</code></pre>
+</details>
+</dd>
+<dt id="MatrixModule.Matrix.isEqual"><code class="name flex">
+<span>def <span class="ident">isEqual</span></span>(<span>self, other)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Allows comparing Matrix instances. One can also (and is encouraged to) use the "=="-operator instead. Expects input as a Matrix instance and returns True or False depending on whether this matrix and other are the same or not.
+For time complexity, see TimeComplexities.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def isEqual(self, other):
+    &#34;&#34;&#34;
+    Allows comparing Matrix instances. One can also (and is encouraged to) use the &#34;==&#34;-operator instead. Expects input as a Matrix instance and returns True or False depending on whether this matrix and other are the same or not.
+    For time complexity, see TimeComplexities.
+    &#34;&#34;&#34;
+    return self.__eq__(other)</code></pre>
+</details>
+</dd>
+<dt id="MatrixModule.Matrix.isNotEqual"><code class="name flex">
+<span>def <span class="ident">isNotEqual</span></span>(<span>self, other)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Allows comparing Matrix instances. One can also (and is encouraged to) use the "!="-operator instead. Expects input as a Matrix instance and returns False or True depending on whether this matrix and other are the same or not.
+This method simply returns the opposite of what isEqual() returns, so for time complexity, see TimeComplexities.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def isNotEqual(self, other):
+    &#34;&#34;&#34;
+    Allows comparing Matrix instances. One can also (and is encouraged to) use the &#34;!=&#34;-operator instead. Expects input as a Matrix instance and returns False or True depending on whether this matrix and other are the same or not.
+    This method simply returns the opposite of what isEqual() returns, so for time complexity, see TimeComplexities.
+    &#34;&#34;&#34;</code></pre>
+</details>
+</dd>
+<dt id="MatrixModule.Matrix.multiply"><code class="name flex">
+<span>def <span class="ident">multiply</span></span>(<span>self, other)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Allows matrix multiplication (including vectors). When multiplying matrix instances, one can also use the "*"-operator. For rules, see README. For time complexity, see TimeComplexities.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def multiply(self, other):
+    &#34;&#34;&#34;
+    Allows matrix multiplication (including vectors). When multiplying matrix instances, one can also use the &#34;*&#34;-operator. For rules, see README. For time complexity, see TimeComplexities.
+    &#34;&#34;&#34;
+    return self.__mul__(other)</code></pre>
+</details>
+</dd>
+<dt id="MatrixModule.Matrix.power"><code class="name flex">
+<span>def <span class="ident">power</span></span>(<span>self, x)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Takes in an exponent and returns a new matrix.. This only works for square matrices. One can also use the "**"-operator to raise matrices to a power.
+For time complexity, see TimeComplexities.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def power(self, x):
+    &#34;&#34;&#34;
+    Takes in an exponent and returns a new matrix.. This only works for square matrices. One can also use the &#34;**&#34;-operator to raise matrices to a power.
+    For time complexity, see TimeComplexities.&#34;&#34;&#34;
+    return self.__pow__(x)</code></pre>
+</details>
+</dd>
+<dt id="MatrixModule.Matrix.set"><code class="name flex">
+<span>def <span class="ident">set</span></span>(<span>self, item, start, stop=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This method allows assignment throug indexing or slicing. One can also (is encouraged to) use the "[]"-delimeters, i.e. expressions of the form a[i:j] = something new or a[i] = something new.
+Takes in an item (int, float or Matrix) and a start and stop index (default is None). Can only replace multiple columns or multiple rows in matrices, not arbitrary rectangles in the matrix.
+For time complexity, see TimeComplexities.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set(self, item, start, stop = None,):
+    &#34;&#34;&#34;
+    This method allows assignment throug indexing or slicing. One can also (is encouraged to) use the &#34;[]&#34;-delimeters, i.e. expressions of the form a[i:j] = something new or a[i] = something new.
+    Takes in an item (int, float or Matrix) and a start and stop index (default is None). Can only replace multiple columns or multiple rows in matrices, not arbitrary rectangles in the matrix.
+    For time complexity, see TimeComplexities.
+    &#34;&#34;&#34;
+    return self.__setitem__(slice(start, stop), item)</code></pre>
+</details>
+</dd>
+<dt id="MatrixModule.Matrix.subtract"><code class="name flex">
+<span>def <span class="ident">subtract</span></span>(<span>self, other)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Allows matrix subtraction (including vectors). When subtracting Matrix instances, one can also use the "-"-operator. For time complexity, see TimeComplexities.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def subtract(self, other):
+    &#34;&#34;&#34;
+    Allows matrix subtraction (including vectors). When subtracting Matrix instances, one can also use the &#34;-&#34;-operator. For time complexity, see TimeComplexities.
+    &#34;&#34;&#34;
+    return self.__sub__(other)</code></pre>
+</details>
+</dd>
+<dt id="MatrixModule.Matrix.trace"><code class="name flex">
+<span>def <span class="ident">trace</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Only works for square matrices. Calculates and returns the trace, the diagonal sum of the matrix.
+Once calculated, the value is cached. For time complexity, see TimeComplexities.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def trace(self):
+    &#34;&#34;&#34;
+    Only works for square matrices. Calculates and returns the trace, the diagonal sum of the matrix.
+    Once calculated, the value is cached. For time complexity, see TimeComplexities.
+    &#34;&#34;&#34;
+    if self._trc == None:
+        if self._N != self._M:
+            raise SizeError(&#34;Matrix is not square.&#34;)
+        return self._sum([self._matrix[i]._matrix[i] for i in range(self._N)])
+    else:
+        return self._trc</code></pre>
+</details>
+</dd>
+<dt id="MatrixModule.Matrix.transpose"><code class="name flex">
+<span>def <span class="ident">transpose</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Transposes the matrix. Returns 'self' after the transponation so that one can access columns with indexing. For time complexity, see TimeComplexities.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def transpose(self):
+    &#34;&#34;&#34;Transposes the matrix. Returns &#39;self&#39; after the transponation so that one can access columns with indexing. For time complexity, see TimeComplexities.&#34;&#34;&#34;
+    self._matrix, self._tmatrix = self._tmatrix, self._matrix
+    self._N, self._M = self._M, self._N
+    self._dim = (self._N, self._M)
+    if self._T:
+        self._T = False
+    elif not self._T:
+        self._T = True
+    self._Healthy()
+    return self</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="MatrixModule.SizeError"><code class="flex name class">
+<span>class <span class="ident">SizeError</span></span>
+<span>(</span><span>...)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Extends the built-in Exception class and creates a new error called SizeError.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class SizeError(Exception):
+    &#34;&#34;&#34;Extends the built-in Exception class and creates a new error called SizeError.&#34;&#34;&#34;
+    pass</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>builtins.Exception</li>
+<li>builtins.BaseException</li>
+</ul>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="MatrixModule.main" href="#MatrixModule.main">main</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="MatrixModule.Matrix" href="#MatrixModule.Matrix">Matrix</a></code></h4>
+<ul class="two-column">
+<li><code><a title="MatrixModule.Matrix.add" href="#MatrixModule.Matrix.add">add</a></code></li>
+<li><code><a title="MatrixModule.Matrix.copy" href="#MatrixModule.Matrix.copy">copy</a></code></li>
+<li><code><a title="MatrixModule.Matrix.det" href="#MatrixModule.Matrix.det">det</a></code></li>
+<li><code><a title="MatrixModule.Matrix.get" href="#MatrixModule.Matrix.get">get</a></code></li>
+<li><code><a title="MatrixModule.Matrix.getDim" href="#MatrixModule.Matrix.getDim">getDim</a></code></li>
+<li><code><a title="MatrixModule.Matrix.getString" href="#MatrixModule.Matrix.getString">getString</a></code></li>
+<li><code><a title="MatrixModule.Matrix.infNorm" href="#MatrixModule.Matrix.infNorm">infNorm</a></code></li>
+<li><code><a title="MatrixModule.Matrix.isEqual" href="#MatrixModule.Matrix.isEqual">isEqual</a></code></li>
+<li><code><a title="MatrixModule.Matrix.isNotEqual" href="#MatrixModule.Matrix.isNotEqual">isNotEqual</a></code></li>
+<li><code><a title="MatrixModule.Matrix.multiply" href="#MatrixModule.Matrix.multiply">multiply</a></code></li>
+<li><code><a title="MatrixModule.Matrix.power" href="#MatrixModule.Matrix.power">power</a></code></li>
+<li><code><a title="MatrixModule.Matrix.set" href="#MatrixModule.Matrix.set">set</a></code></li>
+<li><code><a title="MatrixModule.Matrix.subtract" href="#MatrixModule.Matrix.subtract">subtract</a></code></li>
+<li><code><a title="MatrixModule.Matrix.trace" href="#MatrixModule.Matrix.trace">trace</a></code></li>
+<li><code><a title="MatrixModule.Matrix.transpose" href="#MatrixModule.Matrix.transpose">transpose</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="MatrixModule.SizeError" href="#MatrixModule.SizeError">SizeError</a></code></h4>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.8.1</a>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>
